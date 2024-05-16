@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = "This is a sample web application crafted for the Github Action Workshop, Flisol 2024 Pereira"
+authors = ["Hector Fabio Jimenez S <h3ct0rjs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "^0.29.0"
+fastapi = "^0.111.0"
+
+[tool.poetry.scripts]
+start = "src.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
